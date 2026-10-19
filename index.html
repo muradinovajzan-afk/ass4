@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUKASH Videography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">MUKASH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <!-- Task 3: Popup Button -->
+                    <li class="nav-item ms-lg-2"><button id="openPopupBtn" class="btn btn-outline-warning btn-sm">Subscribe</button></li>
+                    <!-- Task 4: Background Color Changer Button -->
+                    <li class="nav-item ms-lg-2"><button id="changeBgBtn" class="btn btn-outline-info btn-sm">Change Color</button></li>
+                    <li class="nav-item"><a class="btn btn-outline-light ms-lg-3" href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Task 5: Date and Time Display Block -->
+    <div class="bg-secondary text-white text-center py-2" style="margin-top: 70px; font-size: 14px;" id="datetime-banner">
+        Current Date & Time: Loading...
+    </div>
+
+    <main class="container py-5">
+        
+        <section class="hero text-center py-5 my-4 bg-light rounded-4 shadow-sm">
+            <div class="container py-4">
+                <p class="small-title text-muted fw-bold">PROFESSIONAL VIDEOGRAPHY</p>
+                <h1 class="display-4 fw-bold mb-3">YOUR MOMENTS.<br>YOUR STORY.</h1>
+                <p class="lead text-secondary mb-4">
+                    Professional video production for weddings, events, love stories and special moments.
+                </p>
+                <a href="booking.html" class="btn btn-primary btn-lg px-4">Book a Shoot</a>
+            </div>
+        </section>
+
+        <!-- Task 2: Accordion for FAQs -->
+        <section id="faq" class="section py-5">
+            <div class="text-center mb-5">
+                <p class="small-title text-muted fw-bold">HELP & INFO</p>
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How long does it take to receive the final edited video?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-secondary">
+                            Usually, the standard delivery time takes between 2 to 4 weeks depending on the package and event scale.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Can we choose the music for our wedding video?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-secondary">
+                            Yes, absolutely! You can share your favorite tracks or let me select licensed cinematic music that best fits the mood.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you travel outside the city for shoots?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-secondary">
+                            Yes, I am available for destination weddings and out-of-town events with prior arrangement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section py-5">
+            <div class="text-center mb-5">
+                <p class="small-title text-muted fw-bold">WHAT I DO</p>
+                <h2 class="fw-bold">MY SERVICES</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="wedding.jpg" class="card-img-top" alt="Wedding videography" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Wedding</h3>
+                            <p class="card-text text-secondary">Cinematic filming of your wedding day, from preparation to the main celebration.</p>
+                            <strong class="text-primary mt-auto">From 100 000 ₸</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="lovestory.jpeg" class="card-img-top" alt="Love story video" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Love Story</h3>
+                            <p class="card-text text-secondary">Romantic cinematic videos for couples and special memories.</p>
+                            <strong class="text-primary mt-auto">From 60 000 ₸</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="event.jpeg" class="card-img-top" alt="Event videography" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Events & Forums</h3>
+                            <p class="card-text text-secondary">Professional video coverage for events, forums, conferences and celebrations.</p>
+                            <strong class="text-primary mt-auto">From 70 000 ₸</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section py-5">
+            <div class="text-center mb-4">
+                <p class="small-title text-muted fw-bold">PACKAGES</p>
+                <h2 class="fw-bold">PRICING</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle text-center shadow-sm">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Package</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Basic</td><td>2 hours</td><td>40 000 ₸</td></tr>
+                        <tr><td>Standard</td><td>5 hours</td><td>70 000 ₸</td></tr>
+                        <tr><td>Premium</td><td>8 hours</td><td>120 000 ₸</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section py-5">
+            <div class="text-center mb-5">
+                <p class="small-title text-muted fw-bold">PORTFOLIO</p>
+                <h2 class="fw-bold">IMAGE GALLERY & CAROUSEL</h2>
+            </div>
+            
+            <div id="portfolioCarousel" class="carousel slide shadow rounded-4 overflow-hidden mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="max-height: 500px;">
+                    <div class="carousel-item active"><img src="wedding.jpg" class="d-block w-100" alt="Wedding Cinematic"><div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"><h5>Wedding Cinematic</h5></div></div>
+                    <div class="carousel-item"><img src="lovestory.jpeg" class="d-block w-100" alt="Love Story"><div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"><h5>Love Story</h5></div></div>
+                    <div class="carousel-item"><img src="event.jpeg" class="d-block w-100" alt="Business Forum"><div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"><h5>Business Forum</h5></div></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Task 3: Popup Modal Structure -->
+    <div id="subscribeModal" class="custom-popup-overlay">
+        <div class="custom-popup-content bg-white p-5 rounded-4 shadow position-relative">
+            <button id="closePopupBtn" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close"></button>
+            <h3 class="fw-bold mb-3">Newsletter Subscription</h3>
+            <p class="text-secondary mb-4">Get special offers and portfolio updates directly in your inbox.</p>
+            <form id="popupSubForm">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="popupEmail" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2026 MUKASH Videography</p>
+            <p class="text-muted mb-0">Team Member: Amankeldi Mukagali | Group: SE-2515</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
